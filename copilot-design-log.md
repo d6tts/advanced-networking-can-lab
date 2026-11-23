@@ -42,8 +42,8 @@ A practical starting point is **six access switches**, with at least one in each
 This assumes endpoint placement on each floor fits within that floor’s switch capacity. Confirm the floor-by-floor counts and cable distances before ordering; uneven distributions may require different port sizes or additional switches.
 ### My Evaluation
 
-I took advice from Copilot and decid to go with the info it helped give me.
+I accept Copilot's recommendation of six access switches. The endpoint calculations are correct, with 76 devices in Building A, 52 in Building B, and 30 in Building C. This gives the campus a total of 158 wired endpoints.
 
 ### Technical Reason
 
-I compared Copilot's calculations with the requirements of the assignment to make sure the endpoint totals were correct and that the recommended switches could support the connected devices and future expansion.
+The six switches provide 240 total ports, leaving 82 spare ports for future expansion. This gives each building enough starting capacity for its current devices. However, I will need to check the number of devices on each floor to make sure the switches are placed correctly and that no floor runs out of ports.
