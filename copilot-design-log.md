@@ -93,3 +93,21 @@ I accept most of Copilot's IP addressing plan. The subnet calculations are corre
 ### Technical Reason
 
 Using separate subnets for each department helps organize the network and keeps department traffic separated. The larger /24 and /22 networks leave room for future devices. The smaller /30 networks are useful for point-to-point connections because they only need two usable addresses. I also need to plan gateway redundancy so the network can continue working if a core switch fails.
+
+## Interaction 4 – Network Security and Access Control
+
+### Prompt
+
+I asked GitHub Copilot to create a security plan for the campus network. I wanted recommendations for VLAN communication, firewall rules, DMZ protection, wireless security, server protection, and access control lists.
+
+### Copilot Recommendation
+
+Copilot recommended using a default-deny policy. Each department VLAN should only communicate with networks and services it needs. It also recommended isolating the IT Sandbox, protecting internal servers, restricting the management VLAN, and placing public-facing servers in a separate DMZ.
+
+### My Evaluation
+
+I accept Copilot's security recommendations. I will use ACLs to control communication between VLANs and the firewall to protect the campus from outside traffic. I will also keep the IT Sandbox isolated and limit management access to approved IT devices. Guest wireless access should be separated from regular campus wireless access.
+
+### Technical Reason
+
+These security rules help protect the campus network by limiting unnecessary access. Separating departments and servers makes it harder for unauthorized users to reach important information. The firewall and DMZ also allow the public to access the campus website without giving them access to internal computers and servers.
