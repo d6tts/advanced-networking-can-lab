@@ -75,3 +75,21 @@ I accept Copilot's proposed topology with a few improvements. The design separat
 ### Technical Reason
 
 This design makes the campus network easier to manage and expand. Having two core switches provides another connection if one core switch fails. Fiber connections are a good choice for connecting the buildings. Keeping the DMZ separate from the internal network also helps protect campus computers and servers from outside traffic. I will make sure the firewall controls access between the Internet, DMZ, and internal network.
+
+## Interaction 3 – IP Addressing and VLAN Planning
+
+### Prompt
+
+I asked GitHub Copilot to create an IP addressing plan using the campus network block 10.50.0.0/16. I requested separate subnets for the eight departments, internal servers, network management, wireless clients, the DMZ, and routed connections.
+
+### Copilot Recommendation
+
+Copilot recommended using /24 subnets for the eight department VLANs, /26 subnets for internal servers and network management, a /22 subnet for wireless clients, a /28 subnet for the DMZ, and /30 subnets for point-to-point connections.
+
+### My Evaluation
+
+I accept most of Copilot's IP addressing plan. The subnet calculations are correct, and none of the listed networks overlap. I will make a few changes by assigning VLAN IDs to the additional networks and confirming which connections will use routed links instead of Layer 2 trunks.
+
+### Technical Reason
+
+Using separate subnets for each department helps organize the network and keeps department traffic separated. The larger /24 and /22 networks leave room for future devices. The smaller /30 networks are useful for point-to-point connections because they only need two usable addresses. I also need to plan gateway redundancy so the network can continue working if a core switch fails.
