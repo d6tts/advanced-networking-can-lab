@@ -111,3 +111,21 @@ I accept Copilot's security recommendations. I will use ACLs to control communic
 ### Technical Reason
 
 These security rules help protect the campus network by limiting unnecessary access. Separating departments and servers makes it harder for unauthorized users to reach important information. The firewall and DMZ also allow the public to access the campus website without giving them access to internal computers and servers.
+
+## Interaction 5 – Packet Tracer Configuration Planning
+
+### Prompt
+
+I asked GitHub Copilot to create a beginner-friendly configuration plan for my campus network in Cisco Packet Tracer. I requested example commands for VLANs, trunk ports, inter-VLAN routing, OSPF, DHCP, ACLs, NAT/PAT, and connectivity testing.
+
+### Copilot Recommendation
+
+Copilot recommended configuring the network in stages. It suggested starting with the switches and VLANs, then configuring routing, DHCP, security rules, the firewall, and finally testing connectivity. It also explained that the exact commands depend on the Packet Tracer device models.
+
+### My Evaluation
+
+I accept Copilot's staged configuration plan. Before entering commands, I need to confirm the switch and firewall models and decide where the VLAN gateways will be located. I also need to make sure the wireless VLAN can reach all three buildings.
+
+### Technical Reason
+
+Configuring the network one stage at a time makes it easier to find and fix problems. Different Cisco devices support different commands, so checking the models first will help prevent configuration errors. Testing each stage will also help make sure the network works before moving forward.
