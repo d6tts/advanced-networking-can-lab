@@ -1,17 +1,5 @@
 # GitHub Copilot Design Log
 
-## Interaction 1 – Network Design
-
-Prompt:
-
-Copilot Recommendation:
-
-My Evaluation:
-
-Technical Reason:
-
-# GitHub Copilot Design Log
-
 ## Interaction 1 – Campus Endpoint Inventory
 
 ### Prompt
