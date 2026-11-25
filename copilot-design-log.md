@@ -129,3 +129,31 @@ I accept Copilot's staged configuration plan. Before entering commands, I need t
 ### Technical Reason
 
 Configuring the network one stage at a time makes it easier to find and fix problems. Different Cisco devices support different commands, so checking the models first will help prevent configuration errors. Testing each stage will also help make sure the network works before moving forward.
+
+Interaction 6 – Network Security and Final Verification
+
+Objective: Configure network security rules and verify that devices can access approved resources while blocking unauthorized traffic.
+
+AI Assistance: ChatGPT helped create and apply extended access control lists (ACLs) on CORE1 and CORE2. The ACLs were configured for department VLANs, the IT Sandbox, wireless clients, and network management.
+
+Work Completed:
+
+Configured ACLs for department VLANs 10–70.
+
+Restricted the IT Sandbox (VLAN 80) from accessing other internal campus networks.
+
+Configured wireless security rules for VLAN 100.
+
+Restricted access to the network management VLAN 99.
+
+Allowed approved DNS and public website traffic.
+
+Tested DHCP, DNS, website access, and department isolation.
+
+Saved switch configurations and the Packet Tracer project.
+
+Testing Results: The tested devices received correct DHCP addresses, accessed the public website, and were blocked from reaching restricted department networks and internal servers where required.
+
+Human Verification: I entered the commands in Cisco Packet Tracer, reviewed the results, corrected configuration issues, and performed connectivity tests to confirm the network was working as expected.
+
+Outcome: The main campus network configuration and security testing were completed.
