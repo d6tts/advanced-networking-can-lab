@@ -105,3 +105,20 @@ The ASA firewall performs NAT/PAT for the campus network and uses the ISP router
 - The ASA firewall handles outbound NAT/PAT.
 - The DMZ contains the public web server.
 - ACLs restrict unauthorized communication between VLANs.
+
+## 8. Building Endpoint Distribution
+
+The completed campus network supports 158 endpoints across three buildings.
+
+| Building | Lab PCs | Classroom PCs | Office Workstations | Printers | Total |
+|---|---:|---:|---:|---:|---:|
+| Building A | 30 | 10 | 18 | 18 | 76 |
+| Building B | 15 | 9 | 14 | 14 | 52 |
+| Building C | 0 | 8 | 11 | 11 | 30 |
+| **Total** | **45** | **27** | **43** | **43** | **158** |
+
+Each building has two floors. Department endpoints are assigned to their corresponding VLANs:
+
+- Building A: VLAN 10 Computer Science and VLAN 20 Business.
+- Building B: VLAN 30 Engineering and VLAN 40 Mathematics and Science.
+- Building C: VLAN 50 Humanities and VLAN 60 Arts and Communication.
