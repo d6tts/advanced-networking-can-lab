@@ -14,6 +14,19 @@ The network was designed and configured using Cisco Packet Tracer for IST 4210 â
 - **Server Room:** Located in Building A
 - **Outdoor Area:** Campus-wide wireless coverage
 
+## Campus Endpoint Deployment
+
+The completed campus network supports 158 total endpoints across three buildings.
+
+| Building | Lab Computers | Classroom Computers | Office Workstations | Printers | Total |
+|---|---:|---:|---:|---:|---:|
+| Building A | 30 | 10 | 18 | 18 | 76 |
+| Building B | 15 | 9 | 14 | 14 | 52 |
+| Building C | 0 | 8 | 11 | 11 | 30 |
+| **Total** | **45** | **27** | **43** | **43** | **158** |
+
+Each building has two floors with dedicated access switching. Department devices are assigned to their respective VLANs.
+
 ## Network Features
 
 - Redundant Layer 3 core switches using HSRP.
