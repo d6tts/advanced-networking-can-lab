@@ -145,3 +145,27 @@ Testing Results: The tested devices received correct DHCP addresses, accessed th
 Human Verification: I entered the commands in Cisco Packet Tracer, reviewed the results, corrected configuration issues, and performed connectivity tests to confirm the network was working as expected.
 
 Outcome: The main campus network configuration and security testing were completed.
+
+## Interaction 7 – Final Network Implementation
+
+### Final Design
+
+The completed campus network uses a hierarchical design with two Layer 3 core switches, three building distribution switches, and twelve floor access switches, including expansion switches.
+
+The network supports 158 wired endpoints across three buildings. Department devices are separated using VLANs 10–60. Additional VLANs support administration, IT, internal servers, network management, wireless clients, and the DMZ.
+
+### Final Routing and Security
+
+The original design considered OSPF, but the final Packet Tracer implementation uses static default routes from the core switches to the ASA firewall. HSRP provides redundant default gateways, with CORE1 configured as the preferred active switch.
+
+The ASA firewall provides NAT/PAT for campus traffic. ACLs restrict access between department networks and protect internal resources. The public web server is placed in VLAN 110, which is used as the DMZ.
+
+### Final Verification
+
+Testing confirmed that selected devices across all three buildings could receive DHCP addresses, reach the internal DNS server, and load the campus website. Department isolation was also tested.
+
+The final project was saved in Cisco Packet Tracer and uploaded to the GitHub repository. The uploaded project was downloaded and opened successfully.
+
+### Human Evaluation
+
+I reviewed the recommendations, entered the configurations, corrected errors, and tested the network in Packet Tracer. The final implementation reflects the actual devices, configurations, and test results rather than every feature originally considered during planning.
