@@ -72,3 +72,20 @@ The campus network was configured with multiple VLANs, redundant core switches, 
 Testing confirmed that the main network functions worked and that the tested security restrictions behaved as expected.
 
 The ISP connection in Packet Tracer represents a simulated external network, not a connection to the actual public Internet. Additional testing of external access to the DMZ web server would be needed to verify inbound public access.
+
+## Final Building C Verification
+
+| Test | Result |
+|---|---|
+| Humanities DHCP | Passed |
+| Humanities DNS connectivity | Passed |
+| Humanities website access | Passed |
+| Humanities department isolation | Passed |
+| Arts and Communication DHCP | Passed |
+| Arts and Communication DNS connectivity | Passed |
+| Arts and Communication website access | Passed |
+| Arts and Communication department isolation | Passed |
+| Office workstation DNS connectivity | Passed |
+| Office printer connection | Passed |
+
+Building C endpoint deployment and basic connectivity were verified in Cisco Packet Tracer.
